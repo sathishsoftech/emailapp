@@ -7,8 +7,8 @@ var fs = require('fs');
   app.use(bodyParser.urlencoded({ extended: true }));
 
   app.post('/myaction', function(req, res) {
-  var api_key = '71d04e4b6a3546c11952984517d0301a-b9c15f4c-17208b86';
-  var domain = 'sandboxd110875f7a0a4dcf9f39e9dbbe25ef56.mailgun.org';
+  var api_key = API_KEY;
+  var domain = DOMAIN NAME;
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
   //Printing variables for debugging
