@@ -11,6 +11,7 @@ var fs = require('fs');
   var domain = 'sandboxd110875f7a0a4dcf9f39e9dbbe25ef56.mailgun.org';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
+  //Printing variables for debugging
   console.log(req.body.from);
   console.log(req.body.to);
   console.log(req.body.subject);
